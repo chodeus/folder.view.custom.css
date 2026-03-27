@@ -282,3 +282,25 @@ button.folder-dropdown:active {
   display: block;
   margin-left: 10px;
 }
+
+/*************************************************/
+/* MOBILE / NARROW SCREEN                        */
+/*************************************************/
+@media (max-width: 768px) {
+  .folder-preview .folder-preview-divider {
+    float: none;
+    height: 70%;
+    margin: 0;
+    align-self: center;
+  }
+  .folder-preview.fv3-overflow-scroll .folder-preview-divider:not(:last-child) {
+    height: 36px;
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+  .folder-preview.fv3-overflow-expand .folder-preview-divider:not(:last-child) {
+    height: 42px;
+    margin-top: 12px;
+    align-self: flex-start;
+  }
+}
